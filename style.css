@@ -1,0 +1,71 @@
+body {
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+    background-color: #1e1e2e;
+    color: #f9e2af;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    max-width: 65%;
+}
+
+#startlist {
+    background-color: #181825;
+    border-radius: 10px;
+    text-align: left;
+    margin: auto;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+#distrolist {
+    background-color: #181825;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    padding: 10px 20px;
+}
+
+#distrotree {
+    display: none;
+    width: 50%;
+    margin: auto;
+}
+
+#reflist {
+    display: none;
+    background-color: #181825;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    padding: 10px 20px;
+}
+
+a:link {
+    color: #89b4fa;
+    text-decoration: none;
+}
+a:visited {
+    color: #cba6f7;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: none!important;
+    border: none;
+    color: #89b4fa;
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+  }

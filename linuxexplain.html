@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+        <div id="main">
+            <h1>Linux Explained</h1>
+            <h2>Getting Started With Linux</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/149px-Tux_Mono.svg.png" width="100px">
+            <br>
+            <h3>What <i>exactly</i> is Linux?</h3>
+            <p>
+                Linux isn't technically an operating system as it is just the kernel. The kernel is the core part of software that makes up an operating system. The kernel allows for higher level software to interface with hardware like the CPU, memory and I/O.
+                <br>
+                <br>
+                Since Linux is just the kernel, you can not just install it and have a working system. To have a usable system you need the help of other tools that are curated for different needs, these are also known as <a href="distros.html">distrobutions</a> or distros.
+            </p>
+            <br>
+            <br>
+            <footer>
+                <a href="index.html">Home</a> | 
+                <a href="privpol.html">Privacy Policy</a> | 
+                <a href="#" onclick="showReferences(); return false;">References</a>
+            </footer>
+            <br>
+            <div id="reflist">
+                <ul>
+                    <li>No references...</li>
+                </ul>
+            </div>
+            <script>
+            function showReferences() {
+                var x = document.getElementById("reflist");
+                if (x.style.display === "none") {
+                    x.style.display = "flex";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
+        </div>
+    </body>
