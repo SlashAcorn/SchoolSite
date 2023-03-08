@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+        <div id="main">
+            <h1>Title</h1>
+            <h2>Subtitle</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/149px-Tux_Mono.svg.png" width="100px">
+            <br>
+            <h3>Subsubtitle</h3>
+            <p>
+                content
+            </p>
+            <br>
+            <br>
+            <footer>
+                <a href="index.html">Home</a> | 
+                <a href="privpol.html">Privacy Policy</a> | 
+                <a href="#" onclick="showReferences()">References</a>
+            </footer>
+            <br>
+            <div id="reflist">
+                <ul>
+                    <li><a href="index.html">Website Homepage</a></li>
+                </ul>
+            </div>
+            <script>
+            function showReferences() {
+                var x = document.getElementById("reflist");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
+        </div>
+    </body>
+</html>

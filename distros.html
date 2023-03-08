@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+        <div id="main">
+            <h1>Linux Distrobutions</h1>
+            <h2>Getting Started With Linux</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/149px-Tux_Mono.svg.png" width="100px">
+            <br>
+            <h3>What is a Linux Distrobution?</h3>
+            <p>
+                A Linux Distrobution or 'Distro' is a pre packaged system that uses Linux as its kernel. Most of these distros run other software developed by the GNU project alongside linux to allow for a functioning system, this is why some people refer to a Linux OS as GNU/Linux.
+            </p>
+            <h3><a href="#" onclick="showDistros()">Show/Hide Distrobution Tree</a><h3>
+            <div id="distrotree">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Linux_Distribution_Timeline_21_10_2021.svg/320px-Linux_Distribution_Timeline_21_10_2021.svg.png">
+            </div>
+            <script>
+            function showDistros() {
+                var x = document.getElementById("distrotree");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
+            <br>
+            <h3>Summary of Popular Linux Distros</h3>
+            <div id="distrolist">
+                <ul>
+                    <li>
+                        <a href=https://archlinux.org>Arch Linux</a> is a very popular choice because it allows for extreme customisability with its install proccess.
+                    </li>
+                    <li>
+                        <a href="https://linuxmint.com">Linux Mint</a> is popular among new users because it is easy to use and has a windows-like desktop environment.
+                    </li>
+                    <li>
+                        <a href="https://getfedora.org">Fedora Linux</a> is a common Linux distro mostly used for its widespread support for applications.
+                    </li>
+                    <li>
+                        <a href="https://gentoo.org">Gentoo Linux</a> is a hardcore Linux distro allowing for even more customisability than Arch because of the compiled install proccess.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <h3>What Distro is For Me?</h3>
+            <p>
+                There are many distrobutions of Linux suited for people who like to use their computer in different ways. One  of the things that makes Linux so good is how adaptable it is for different needs. There are websites available that can help you decide on which distro to use like distrochooser.de
+            </p>
+            <h3><a href="#" onclick="showChooser(); return false;">Hide/Show DistroChooser</a></h3>
+            <div id="distrochooser">
+            <iframe src="https://distrochooser.de" width="90%" height="500px">Distrochooser</iframe>
+            </div>
+            <script>
+            function showChooser() {
+                var x = document.getElementById("distrochooser");
+                if (x.style.display === "none") {
+                    x.style.display = "flex";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
+            <p>
+                There is lots of misinformation and unhelpful information when it comes to chosing a Linux distro. Some blog posts will give contradictory information. The best thing to do is just to stay away from articles titled anything similar to "The Top 10 BEST Linux Distros in 2023".
+            </p>
+            <br>
+            <br>
+            <footer>
+                <a href="index.html">Home</a> | 
+                <a href="privpol.html">Privacy Policy</a> | 
+                <a href="#" onclick="showReferences(); return false;">References</a>
+            </footer>
+            <br>
+            <div id="reflist">
+                <ul>
+                    <li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Linux_Distribution_Timeline_21_10_2021.svg/320px-Linux_Distribution_Timeline_21_10_2021.svg.png">Distrobution Tree</a></li>
+                    <li><a href=https://archlinux.org>Arch Linux</a></li>
+                    <li><a href=https://linuxmint.com>Linux Mint</a></li>
+                    <li><a href=https://getfedora.org>Fedora Linux</a></li>
+                    <li><a href=https://gentoo.org>Gentoo Linux</a></li>
+                    <li><a href="https://distrochooser.de">DistroChooser</a></li>
+                </ul>
+            </div>
+            <script>
+            function showReferences() {
+                var x = document.getElementById("reflist");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            </script>
+        </div>
+    </body>
+</html>
