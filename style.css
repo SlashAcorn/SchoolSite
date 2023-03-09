@@ -10,6 +10,76 @@ body {
 
 #main {
     max-width: 65%;
+    margin-top: 40px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #181825;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.sidebar a {
+    padding: 10px 10px 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    background-color: #313244;
+    color: #cba6f7;
+}
+
+.sidebar .closebutton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+.openbutton {
+    justify-content: left;    
+    font-size: 20px;
+    cursor: pointer;
+    color:#89b4fa;
+    background-color: #181825;
+    padding: 16px 22px;
+    border: none;
+}
+
+.navbar {
+    overflow: hidden;
+    font-size: 20px;
+    background-color: #181825;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    text-align: left;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #313244;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 #startlist {
@@ -63,13 +133,3 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
-
-button {
-    background: none!important;
-    border: none;
-    color: #89b4fa;
-    font-family: "Jetbrains Mono", monospace;
-    font-size: 18px;
-    text-decoration: none;
-    cursor: pointer;
-  }
