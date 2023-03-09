@@ -23,13 +23,13 @@
             </div>
             <script>
             function showDistros() {
-                var x = document.getElementById("distrotree");
+                var shown = document.getElementById("distrotree");
                 var text = document.getElementById("showhidedistrotree");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
+                if (shown.style.display === "block") {
+                    shown.style.display = "none";
                     text.innerHTML = "Show Distrobution Tree"
                 } else {
-                    x.style.display = "block";
+                    shown.style.display = "block";
                     text.innerHTML = "Hide Distrobution Tree"
                 }
             }
@@ -75,6 +75,9 @@
             </script>
             <p>
                 There is lots of misinformation and unhelpful information when it comes to chosing a Linux distro. Some blog posts will give contradictory information. The best thing to do is just to stay away from articles titled anything similar to "The Top 10 BEST Linux Distros in 2023".
+                <br>
+                <br>
+                One of the best ways to chose a distro is just to pick a common one for beginners like Mint, Fedora or Pop!_OS. Don't spend to much time on chosing the distro as you can always change later. Most aspects of different Linux distros are global accross all distros, for example Mint's Windows-like desktop en vironment can be installed on any other distro.
             </p>
             <br>
             <br>
@@ -96,11 +99,11 @@
             </div>
             <script>
             function showReferences() {
-                var x = document.getElementById("reflist");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
+                var shown = document.getElementById("reflist");
+                if (shown.style.display === "none") {
+                    shown.style.display = "block";
                 } else {
-                    x.style.display = "none";
+                    shown.style.display = "none";
                 }
             }
             </script>
