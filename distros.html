@@ -17,21 +17,23 @@
             <p>
                 A Linux Distrobution or 'Distro' is a pre packaged system that uses Linux as its kernel. Most of these distros run other software developed by the GNU project alongside linux to allow for a functioning system, this is why some people refer to a Linux OS as GNU/Linux.
             </p>
-            <h3><a href="#" onclick="showDistros()">Show/Hide Distrobution Tree</a><h3>
+            <h3><a href="#" onclick="showDistros(); return false;" id="showhidedistrotree">Show Distrobution Tree</a><h3>
             <div id="distrotree">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Linux_Distribution_Timeline_21_10_2021.svg/320px-Linux_Distribution_Timeline_21_10_2021.svg.png">
             </div>
             <script>
             function showDistros() {
                 var x = document.getElementById("distrotree");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
+                var text = document.getElementById("showhidedistrotree");
+                if (x.style.display === "block") {
                     x.style.display = "none";
+                    text.innerHTML = "Show Distrobution Tree"
+                } else {
+                    x.style.display = "block";
+                    text.innerHTML = "Hide Distrobution Tree"
                 }
             }
             </script>
-            <br>
             <h3>Summary of Popular Linux Distros</h3>
             <div id="distrolist">
                 <ul>
@@ -54,17 +56,20 @@
             <p>
                 There are many distrobutions of Linux suited for people who like to use their computer in different ways. One  of the things that makes Linux so good is how adaptable it is for different needs. There are websites available that can help you decide on which distro to use like distrochooser.de
             </p>
-            <h3><a href="#" onclick="showChooser(); return false;">Hide/Show DistroChooser</a></h3>
+            <h3><a href="#" onclick="showChooser(); return false;" id="showhidedistrochooser">Hide DistroChooser</a></h3>
             <div id="distrochooser">
             <iframe src="https://distrochooser.de" width="90%" height="500px">Distrochooser</iframe>
             </div>
             <script>
             function showChooser() {
-                var x = document.getElementById("distrochooser");
-                if (x.style.display === "none") {
-                    x.style.display = "flex";
+                var shown = document.getElementById("distrochooser");
+                var text = document.getElementById("showhidedistrochooser")
+                if (shown.style.display === "none") {
+                    shown.style.display = "block";
+                    text.innerHTML = "Hide DistroChooser"
                 } else {
-                    x.style.display = "none";
+                    shown.style.display = "none";
+                    text.innerHTML = "Show DistroChooser"
                 }
             }
             </script>

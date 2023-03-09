@@ -37,6 +37,10 @@ body {
     margin: auto;
 }
 
+#distrochooser {
+    display: block;
+}
+
 #reflist {
     display: none;
     background-color: #181825;
