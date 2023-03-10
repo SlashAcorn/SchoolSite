@@ -8,15 +8,36 @@
     </head>
 
     <body>
+
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebutton"
+        onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="distros.html">Distrobutions</a>
+            <a href="linuxexplain.html">Linux Explained</a>
+            <a href="install.html">Installing Linux</a>
+            <a href="whylinux.html">Why Linux</a>
+            <a href="customising.html">Customising Linux</a>
+            <a href="virtualmachines.html">Virtual Machines</a>
+        </div>
+
+        <div id="navbar" class="navbar">
+            <a href="#" class="openbutton" onclick="openNav(); return false;">&#9776;</a>
+            <a href="index.html">Home</a>
+<!--        <div id="title" class="title">
+                <h4>How to Linux</h4>
+            </div> -->
+        </div>
+
         <div id="main">
             <h1>How to Linux</h1>
             <h2>This website is a guide on how to use Linux</h2>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/149px-Tux_Mono.svg.png" width="100px">
             <br>
-            <h3>What is Linux?</h3>
+            <h3>What is Linux</h3>
             <p>
                 Linux, or <a href="https://wiki.installgentoo.com/index.php/Interjection" target="_blank">GNU/Linux</a>
-                is an operating system (OS) that runs on your computer. Linux isn't technically the OS as it is only the kernel. This website will link to other pages that will give you more specific information about linux.
+                is an operating system (OS) that runs on your computer. Linux isn't technically the OS as it is only the kernel. This website will link to other pages that will give you more specific information about Linux.
             </p>
             <br>
             <h3>Getting Started</h3>
@@ -46,7 +67,18 @@
                     <li><a href="https://wiki.installgentoo.com/index.php/Interjection">Interjection</a></li>
                 </ul>
             </div>
-            <script>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sidebar").style.width = "230px";
+                document.getElementById("navbar").style.marginLeft = "356px";
+            }
+
+            function closeNav() {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("navbar").style.marginLeft = "0";
+            }
+
             function showReferences() {
                 var shown = document.getElementById("reflist");
                 if (shown.style.display === "none") {
@@ -54,8 +86,7 @@
                 } else {
                     shown.style.display = "none";
                 }
-            }
-            </script>
-        </div>
+                }
+        </script>
     </body>
 </html>
