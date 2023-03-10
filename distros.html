@@ -8,6 +8,26 @@
     </head>
 
     <body>
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebutton"
+        onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="distros.html">Distrobutions</a>
+            <a href="linuxexplain.html">Linux Explained</a>
+            <a href="install.html">Installing Linux</a>
+            <a href="whylinux.html">Why Linux</a>
+            <a href="customising.html">Customising Linux</a>
+            <a href="virtualmachines.html">Virtual Machines</a>
+        </div>
+
+        <div id="navbar" class="navbar">
+            <a href="#" class="openbutton" onclick="openNav(); return false;">&#9776;</a>
+            <a href="index.html">Home</a>
+            <div class="title">
+                How to Linux
+            </div>
+        </div>
+
         <div id="main">
             <h1>Linux Distrobutions</h1>
             <h2>Getting Started With Linux</h2>
@@ -21,19 +41,6 @@
             <div id="distrotree">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Linux_Distribution_Timeline_21_10_2021.svg/320px-Linux_Distribution_Timeline_21_10_2021.svg.png">
             </div>
-            <script>
-            function showDistros() {
-                var shown = document.getElementById("distrotree");
-                var text = document.getElementById("showhidedistrotree");
-                if (shown.style.display === "block") {
-                    shown.style.display = "none";
-                    text.innerHTML = "Show Distrobution Tree"
-                } else {
-                    shown.style.display = "block";
-                    text.innerHTML = "Hide Distrobution Tree"
-                }
-            }
-            </script>
             <h3>Summary of Popular Linux Distros</h3>
             <div id="distrolist">
                 <ul>
@@ -60,19 +67,6 @@
             <div id="distrochooser">
             <iframe src="https://distrochooser.de" width="90%" height="500px">Distrochooser</iframe>
             </div>
-            <script>
-            function showChooser() {
-                var shown = document.getElementById("distrochooser");
-                var text = document.getElementById("showhidedistrochooser")
-                if (shown.style.display === "none") {
-                    shown.style.display = "block";
-                    text.innerHTML = "Hide DistroChooser"
-                } else {
-                    shown.style.display = "none";
-                    text.innerHTML = "Show DistroChooser"
-                }
-            }
-            </script>
             <p>
                 There is lots of misinformation and unhelpful information when it comes to chosing a Linux distro. Some blog posts will give contradictory information. The best thing to do is just to stay away from articles titled anything similar to "The Top 10 BEST Linux Distros in 2023".
                 <br>
@@ -97,7 +91,42 @@
                     <li><a href="https://distrochooser.de">DistroChooser</a></li>
                 </ul>
             </div>
-            <script>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementById("navbar").style.marginLeft = "396px";
+            }
+
+            function closeNav() {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("navbar").style.marginLeft = "0";
+            }
+
+            function showDistros() {
+                var shown = document.getElementById("distrotree");
+                var text = document.getElementById("showhidedistrotree");
+                if (shown.style.display === "block") {
+                    shown.style.display = "none";
+                    text.innerHTML = "Show Distrobution Tree"
+                } else {
+                    shown.style.display = "block";
+                    text.innerHTML = "Hide Distrobution Tree"
+                }
+            }
+
+            function showChooser() {
+                var shown = document.getElementById("distrochooser");
+                var text = document.getElementById("showhidedistrochooser")
+                if (shown.style.display === "none") {
+                    shown.style.display = "block";
+                    text.innerHTML = "Hide DistroChooser"
+                } else {
+                    shown.style.display = "none";
+                    text.innerHTML = "Show DistroChooser"
+                }
+            }
+
             function showReferences() {
                 var shown = document.getElementById("reflist");
                 if (shown.style.display === "none") {
@@ -106,7 +135,6 @@
                     shown.style.display = "none";
                 }
             }
-            </script>
-        </div>
+        </script>
     </body>
 </html>

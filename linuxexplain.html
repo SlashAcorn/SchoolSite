@@ -8,6 +8,26 @@
     </head>
 
     <body>
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebutton"
+        onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="distros.html">Distrobutions</a>
+            <a href="linuxexplain.html">Linux Explained</a>
+            <a href="install.html">Installing Linux</a>
+            <a href="whylinux.html">Why Linux</a>
+            <a href="customising.html">Customising Linux</a>
+            <a href="virtualmachines.html">Virtual Machines</a>
+        </div>
+
+        <div id="navbar" class="navbar">
+            <a href="#" class="openbutton" onclick="openNav(); return false;">&#9776;</a>
+            <a href="index.html">Home</a>
+            <div class="title">
+                How to Linux
+            </div>
+        </div>
+
         <div id="main">
             <h1>Linux Explained</h1>
             <h2>Getting Started With Linux</h2>
@@ -33,7 +53,18 @@
                     <li>No references...</li>
                 </ul>
             </div>
-            <script>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementById("navbar").style.marginLeft = "396px";
+            }
+
+            function closeNav() {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("navbar").style.marginLeft = "0";
+            }
+
             function showReferences() {
                 var shown = document.getElementById("reflist");
                 if (shown.style.display === "none") {
@@ -42,6 +73,6 @@
                     shown.style.display = "none";
                 }
             }
-            </script>
-        </div>
+        </script>
     </body>
+</html>

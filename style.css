@@ -55,11 +55,12 @@ body {
     color:#89b4fa;
     background-color: #181825;
     padding: 16px 22px;
-    border: none;
+        border: none;
 }
 
 .navbar {
     overflow: hidden;
+    display: flex;
     font-size: 20px;
     background-color: #181825;
     position: fixed;
@@ -69,12 +70,16 @@ body {
     text-align: center;
 }
 
-/*
+
 .title {
-    width: 100%;
-    padding: 0px 0px;
+    height: 58px;
+    margin-right: 10%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 100;
 }
-*/
 
 .navbar a {
     float: left;
