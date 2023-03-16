@@ -78,6 +78,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
     flex-grow: 100;
 }
 
