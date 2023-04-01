@@ -31,14 +31,29 @@
         </div>
 
         <div id="main">
-            <h1>Title</h1>
-            <h2>Subtitle</h2>
+            <h1>Customising Linux</h1>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/149px-Tux_Mono.svg.png" width="100px">
             <br>
-            <h3>Subsubtitle</h3>
+            <h3>Why is Linux So Customisable</h3>
             <p>
-                content
+                Linux is so cusotmisable due to its open source nature, anyone can modify anything. Open source developers understand that people like modifying things (because they do too) and so they allow for configuration files to change things about the program.
             </p>
+            <h3>Why Customise Linux</h3>
+            <p>
+                You would customise Linux for many reasons. Everyone has their own distinct tastes in how they want their software to look and function, with closed source this results in everything looking different and incoherent. You can customise Linux and the free, open source software running on it to look and behave exactly how you want it to. You may want to customise Linux to improve your productity and even just for fun.  
+            </p>
+            <h3>How to Customise Linux</h3>
+            <p>
+                You customise most Linux programs through configuration files in the ~/.config directory. You can configure how your desktop looks by installing different desktop environments or winow managers. Desktop environments are complete desktops that are configured through settings menus just like you would expect on Microsoft Windows. Window managers are far more minimal and only handle where the windows are placed on the screen, they are configured with text files stored in ~/.config and rely on the user to install their own programs for the more complex tasks.
+            </p>
+            <h3>Tiling Window Managers</h3>
+            <p>
+                Tiling window managers are window managers that place the windows automatically on the screen like tiles. This is different to most "Normie" operating systems where the windows are floating and you have to drag the windows around yourself which is slow. Tiling window managers allow for more productivity (with a somewhat steep initial learning curve) the windows are layed out to cover the whole screen and are primarily manipulted with keyboard shortcuts. Some people just use tiling window managers because they look nice and because all the <i>cool</i> people use them B).
+            </p>
+            <h4><a href="#" onclick="showTiler(); return false;" id="showhidetiler">Hide Tiling Window Manager Configuration</a><h4>
+            <div id="tiler">
+                <img src="configuration.png" alt="Image of an example configuration of a tiling window manager" width="400px">
+            </div>
             <br>
             <br>
             <footer>
@@ -74,7 +89,18 @@
                 } else {
                     shown.style.display = "none";
                 }
+            }
+            function showTiler() {
+                var shown = document.getElementById("tiler");
+                var text = document.getElementById("showhidetiler");
+                if (shown.style.display === "none") {
+                   shown.style.display = "block";
+                    text.innerHTML = "Hide Tiling Window Manager Configuration"
+                } else {
+                    shown.style.display = "none";
+                    text.innerHTML = "Show Tiling Window Manager Configuration"
                 }
+            }
         </script>
     </body>
 </html>

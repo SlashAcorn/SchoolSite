@@ -121,6 +121,12 @@ body {
     margin: auto;
 }
 
+#tiler {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
 #distrochooser {
     display: block;
 }
